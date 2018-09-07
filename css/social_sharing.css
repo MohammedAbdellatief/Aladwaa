@@ -1,0 +1,82 @@
+.Social_Sharing {
+    box-shadow:0 3px 3px rgba(0,0,0,.15);
+    background-color:#fff;
+    margin-bottom: 20px;
+}
+.sticky{
+    position: fixed;
+    top:70px;
+    z-index: 99;
+
+}
+.sticky:hover{
+    z-index: 99999;
+}
+.share_btn_cont {
+    padding:10px;
+    font-size: 0;
+}
+.share_btn_cont a{
+    display: inline-block;
+    padding: 3px;
+    margin: 4px;
+    width: calc(25% - 8px);
+    border-radius: 2px;
+    box-shadow:0 2px 0 rgba(0,0,0,.1);
+    opacity: .9;
+    text-decoration: none;
+}
+.share_btn_cont a:hover{
+    opacity: 1;
+}
+.share_btn_cont a.google {
+    background-color: #DE5644;
+}
+
+.share_btn_cont a.twitter {
+    background-color: #65ABD0;
+}
+
+.share_btn_cont a.facebook {
+    background-color: #3460A1;
+}
+.share_btn_cont svg{
+    fill: #fff;
+    height: 20px;
+}
+.share_btn_cont .facbook_icon{
+    width: 17px;
+    height: auto;
+    margin: 0;
+}
+.share_btn_cont a > span{
+    display: block;
+    padding: 2px;
+    height: 25px;
+}
+.share_btn_cont .bookmark{
+    background-color: #2e4866;
+    height: auto !important;
+}
+.share_btn_cont a > .bookmark_icon{
+    width: auto;
+    background: none;
+    border: none;
+    line-height: normal;
+}
+.share_btn_cont .bookmark svg{
+    fill: #43BF58;
+}
+.share_btn_cont .bookmark.active{
+    background-color:#43BF58;
+}
+.share_btn_cont .bookmark.active svg{
+    fill: #fff;
+}
+.share_btn_cont span.action_text {
+    background-color: #fff;
+    color: #000;
+    font-size: 10px;
+    height: auto;
+}
+

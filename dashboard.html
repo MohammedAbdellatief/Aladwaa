@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title> dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/navigation.css">
+        <!-- Custom styles for dashboard -->
+        <link rel="stylesheet" href="css/dashboard.css">
+        <link rel="stylesheet" href="css/social_sharing.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the pgFld via file:// -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body class="master">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Navigation -->
+        <nav class="navbar yamm navbar-white navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="sprt_con search navbar-left dropdown yamm-fw">
+                    <a id="srch_trgr" href="#" title="بحث" class="trnstn" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                        <svg class="magni_icon" viewBox="0 0 30 30">
+                            <use xlink:href="#magni_icon" />
+                        </svg>
+                    </a>
+                    <form class="navbar-form trnstn dropdown-menu" role="search" aria-labelledby="srch_trgr">
+                        <div class="form-group container-fluid ">
+                            <input type="text" class="form-control searchbox" placeholder="ابحث في موقع الأضواء ...">
+                        </div>
+                        <!--<button type="submit" class="btn btn-default">Submit</button>-->
+                    </form>
+                </div>
+                <div class="navbar-header page-scroll">
+                    <!-- Mobile toggle button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">القائمة</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Logo -->
+                    <a class="navbar-brand " href="#">
+                        <h1 class="text-hide">الاضواء</h1>
+                        <svg class="logo_icon" viewBox="0 0 195 95">
+                            <use xlink:href="#aladwaa_logo" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+                    <div class="sprt_con user_area navbar-left">
+                        <a class="user_info" href="#">
+                            <span class="user_img">
+                                <svg class="user_icon" viewBox="0 0 24 24">
+                                    <use xlink:href="#user_icon" />
+                                </svg>
+                                <!--<img src="img/default_user.png" alt=""/>-->
+                            </span>
+                            <span class="user_name"> تسجيل الدخول
+                                <small class="str_pnts">
+                                    <span class="num">10</span>  نقاط المتجر
+                                </small>
+                            </span>
+                        </a>
+
+                    </div>
+
+                    <div class="sprt_con ntfc navbar-left dropdown">
+                        <a id="ntfc_trgr" href="#" class="ntfc_lnk trnstn" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false" title="ملاحضات">
+                            <span class="ntfc_num">1</span>
+                            <svg class="ntfc_icon" viewBox="0 0 26 29">
+                                <use xlink:href="#notifications_icon" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu trnstn" role="menu" aria-labelledby="ntfc_trgr">
+                            <div class="panel panel-default ntfc_cont">
+                                <div class="panel-heading"><h5>مرحبا بك في موقعك الاضواء</h5></div>
+                                <div class="panel-body">
+                                    <p>لديك 10 نقاط لمتجر الاضواء. سجل دخولك لاستخدام نقاطك في المتجر. او انشئ حساب اذا لم تكن مشتركا لتزيد رصيد نقاطك</p>
+                                </div>
+                                <div class="panel-footer">
+                                    <a class="btn blue_btn" href="#"> تسجيل الدخول  </a>
+                                    <a class="btn blue_btn" href="#">  متجر الأضواء </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from "second section" link when scrolled up past "second section" -->
+                        <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+                        <li class="dropdown yamm-fw hvr trnstn">
+                            <a id="dd1" data-toggle="dropdown" class="dropdown-toggle trnstn" role="button" href="#" aria-expanded="false"> دروس <span class="caret"></span></a>
+                            <div class="dropdown-menu trnstn" aria-labelledby="dd1" role="menu">
+
+                                <div class="container-fluid">
+                                    <div class="row" role="tabpanel" data-example-id="togglable-tabs">
+                                        <div class="col-lg-3 col-md-3 col-sm-3">
+                                            <ul class="mega_tabs" class="nav-pills nav-stacked" role="tablist">
+                                                <li role="presentation" class="active default"><a href="#byYear" aria-controls="byYear" role="tab" data-toggle="tab" aria-expanded="true">المرحلة الدراسية
+                                                    <svg class="triangle" viewBox="0 0 20 88">
+                                                        <use xlink:href="#triangle" />
+                                                    </svg>
+                                                </a></li>
+                                                <li role="presentation"><a href="#bysubject" aria-controls="bysubject" role="tab" data-toggle="tab">المادة الدراسية
+                                                    <svg class="triangle" viewBox="0 0 20 88">
+                                                        <use xlink:href="#triangle" />
+                                                    </svg>
+                                                </a></li>
+                                                <li role="presentation"><a href="#special" aria-controls="special" role="tab" data-toggle="tab">دروس مميزة
+                                                    <svg class="triangle" viewBox="0 0 20 88">
+                                                        <use xlink:href="#triangle" />
+                                                    </svg>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-9 col-md-9 col-sm-9">
+                                            <!-- Tab panes -->
+                                            <ul class="tab-content">
+                                                <li role="tabpanel" class="tab-pane active" id="byYear">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="tabs_block">
+                                                                <h4>المرحلة الابتدائية</h4>
+                                                                <a href="#">الصف الاول الابتدائي</a>
+                                                                <a href="#">الصف الثاني  الابتدائي</a>
+                                                                <a href="#">الصف الثالث الابتدائي</a>
+                                                                <a href="#">الصف الرابع الابتدائي</a>
+                                                                <a href="#">الصف الخامس الابتدائي</a>
+                                                                <a href="#">الصف السادس الابتدائي</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="tabs_block">
+                                                                <h4>المرحلة الاعدادية</h4>
+                                                                <a href="#"> الصف الاول الاعدادي </a>
+                                                                <a href="#"> الصف الثاني الاعدادي </a>
+                                                                <a href="#">الصف الثالث الاعدادي</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="tabs_block no_border">
+                                                                <h4>المرحلة الثانوية</h4>
+                                                                <a href="#">الصف الاول الثانوي</a>
+                                                                <a href="#">الصف الثاني الثانوي</a>
+                                                                <a href="#">الصف الثالث الثانوي</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li role="tabpanel" class="tab-pane " id="bysubject">
+                                                    <ul class="sbjcts_list">
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="img-circle">
+                                                                    <svg>
+                                                                        <use xlink:href="#books_icon" />
+                                                                    </svg>
+                                                                </span>
+                                                                <h3>اللغة العربية</h3>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="img-circle">
+                                                                    <svg>
+                                                                        <use xlink:href="#books_icon" />
+                                                                    </svg>
+                                                                </span>
+                                                                <h3>اللغة الانجليزية</h3>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="img-circle">
+                                                                    <svg>
+                                                                        <use xlink:href="#books_icon" />
+                                                                    </svg>
+                                                                </span>
+                                                                <h3>اللغة الفرنسية</h3>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="img-circle">
+                                                                    <svg>
+                                                                        <use xlink:href="#books_icon" />
+                                                                    </svg>
+                                                                </span>
+                                                                <h3>التربية اللاسلامية </h3>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="img-circle">
+                                                                    <svg>
+                                                                        <use xlink:href="#books_icon"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <h3> الكيمياء </h3>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="img-circle">
+                                                                    <svg>
+                                                                        <use xlink:href="#books_icon"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <h3> الفيزياء </h3>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="img-circle">
+                                                                    <svg>
+                                                                        <use xlink:href="#books_icon"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <h3> الاحياء </h3>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="img-circle">
+                                                                    <svg>
+                                                                        <use xlink:href="#books_icon"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <h3> الرياضيات </h3>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="img-circle">
+                                                                    <svg>
+                                                                        <use xlink:href="#books_icon"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <h3> الجغرافيا </h3>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="img-circle">
+                                                                    <svg>
+                                                                        <use xlink:href="#books_icon"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <h3> التاريخ </h3>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="img-circle">
+                                                                    <svg>
+                                                                        <use xlink:href="#books_icon"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <h3> الفلسفة </h3>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="img-circle">
+                                                                    <svg>
+                                                                        <use xlink:href="#books_icon"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <h3> علم النفس </h3>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="img-circle">
+                                                                    <svg>
+                                                                        <use xlink:href="#books_icon"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <h3>الاقتصاد والاحصاء</h3>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"> المزيد
+                                                                <span class="arrow_left">
+                                                                <svg>
+                                                                    <use xlink:href="#arrow_icon" />
+                                                                </svg>
+                                                            </span>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                </li>
+                                                <li role="tabpanel" class="tab-pane " id="special">
+                                                    <div class="row lessons_nav">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                                            <div class="block_unit clearfix">
+                                                                <div class="cvr_phto img-rounded">
+                                                                    <div class="tumb cover">
+                                                                        <img class="cover" src="img/img_test.png" alt=""/>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="panel-title trnstn">
+                                                                    <h2>
+                                                                        <span class="play_vid trnstn">
+                                                                            <svg class="play_icon trnstn" viewBox="0 0 26 29">
+                                                                                <use xlink:href="#play_icon" />
+                                                                            </svg>
+                                                                        </span>
+                                                                        <a href="#"> عنوان الفيديو هنا عنوان الفيديو هنا عنوان الفيديو هنا </a>
+
+                                                                    </h2>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                                            <div class="block_unit clearfix">
+                                                                <div class="cvr_phto img-rounded">
+                                                                    <div class="tumb cover">
+                                                                        <img class="cover" src="img/img_test.png" alt=""/>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="panel-title trnstn">
+                                                                    <h2>
+                                                                        <span class="play_vid trnstn">
+                                                                            <svg class="play_icon trnstn" viewBox="0 0 26 29">
+                                                                                <use xlink:href="#play_icon" />
+                                                                            </svg>
+                                                                        </span>
+                                                                        <a href="#"> عن عنوان الفيديو هنا </a>
+
+                                                                    </h2>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                                            <div class="block_unit clearfix">
+                                                                <div class="cvr_phto img-rounded">
+                                                                    <div class="tumb cover">
+                                                                        <img class="cover" src="img/img_test.png" alt=""/>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="panel-title trnstn">
+                                                                    <h2>
+                                                                        <span class="play_vid trnstn">
+                                                                            <svg class="play_icon trnstn" viewBox="0 0 26 29">
+                                                                                <use xlink:href="#play_icon" />
+                                                                            </svg>
+                                                                        </span>
+                                                                        <a href="#"> عن عنوان الفيديو هنا </a>
+
+                                                                    </h2>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="trnstn">
+                            <a class="trnstn" href="#">مراجعات</a>
+                        </li>
+                        <li class="dropdown yamm-fw hvr trnstn">
+                            <a id="dd2" href="#" class="dropdown-toggle trnstn" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false"> امتحانات <span class="caret"></span></a>
+                            <div class="dropdown-menu trnstn" role="menu" aria-labelledby="dd2">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                            <div class="tabs_block flex_center">
+                                                <a class="more_srvcs" href="#">
+                                                <span class="img-circle">
+                                                    <img src="img/icon.png" alt=""/>
+                                                </span>
+                                                    <h3>امتحان للطالب</h3>
+                                                    <p>نبذة مختصرة عن فائدة هذه الخدمة للمستخدم</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ">
+                                            <div class="tabs_block flex_center">
+                                                <a class="more_srvcs" href="#">
+                                                <span class="img-circle">
+                                                    <img src="img/icon.png" alt=""/>
+                                                </span>
+                                                    <h3>بناء امتحان للمعلم </h3>
+                                                    <p>نبذة مختصرة عن فائدة هذه الخدمة للمستخدم</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ">
+                                            <div class="tabs_block flex_center no_border">
+                                                <a class="more_srvcs" href="#">
+                                                <span class="img-circle">
+                                                    <img src="img/icon.png" alt=""/>
+                                                </span>
+                                                    <h3> بناء امتحان لولي الامر   </h3>
+                                                    <p>نبذة مختصرة عن فائدة هذه الخدمة للمستخدم</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="trnstn">
+                            <a class="trnstn" href="#">مسابقات</a>
+                        </li>
+                        <li class="trnstn">
+                            <a class="trnstn" href="#"> اسأل</a>
+                        </li>
+                        <li class="dropdown yamm-fw hvr trnstn">
+                            <a id="dd6" data-toggle="dropdown" class="dropdown-toggle trnstn" role="button" href="#" aria-expanded="false">
+                                    <svg class="more_icon">
+                                        <use  xlink:href="#more_icon"></use>
+                                    </svg>
+                                <span class="caret"></span></a>
+                            <div class="dropdown-menu trnstn" aria-labelledby="dd6" role="menu">
+
+                                <div class="container-fluid">
+                                    <div class="row" role="tabpanel" data-example-id="togglable-tabs">
+                                        <div class="col-lg-3 col-md-3 col-sm-3">
+                                            <ul class="mega_tabs" class="nav-pills nav-stacked" role="tablist">
+                                                <li role="presentation" class="active default"><a href="#firstTab" aria-controls="firstTab" role="tab" data-toggle="tab" aria-expanded="true"> خدمات اخري للطالب
+                                                    <svg class="triangle" viewBox="0 0 20 88">
+                                                        <use xlink:href="#triangle" />
+                                                    </svg>
+                                                </a></li>
+                                                <li role="presentation"><a href="#secondTab" aria-controls="secondTab" role="tab" data-toggle="tab"> خدمات اخري للمعلم
+                                                    <svg class="triangle" viewBox="0 0 20 88">
+                                                        <use xlink:href="#triangle" />
+                                                    </svg>
+                                                </a></li>
+                                                <li role="presentation"><a href="#thirdTab" aria-controls="thirdTab" role="tab" data-toggle="tab">خدمات اخري لولي الامر
+                                                    <svg class="triangle" viewBox="0 0 20 88">
+                                                        <use xlink:href="#triangle" />
+                                                    </svg>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-9 col-md-9 col-sm-9">
+                                            <!-- Tab panes -->
+                                            <ul class="tab-content">
+                                                <li role="tabpanel" class="tab-pane active" id="firstTab">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                            <div class="tabs_block flex_center">
+                                                                <a class="more_srvcs" href="#">
+                                                                    <span class="img-circle">
+                                                                        <img src="img/icon.png" alt=""/>
+                                                                    </span>
+                                                                    <h3>مشاركات</h3>
+                                                                    <p>نبذة مختصرة عن فائدة هذه الخدمة للمستخدم</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ">
+                                                            <div class="tabs_block flex_center">
+                                                                <a class="more_srvcs" href="#">
+                                                                    <span class="img-circle">
+                                                                        <img src="img/icon.png" alt=""/>
+                                                                    </span>
+                                                                    <h3>معلومات تهمك</h3>
+                                                                    <p>نبذة مختصرة عن فائدة هذه الخدمة للمستخدم</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ">
+                                                            <div class="tabs_block flex_center no_border">
+                                                                <a class="more_srvcs" href="#">
+                                                                    <span class="img-circle">
+                                                                        <img src="img/icon.png" alt=""/>
+                                                                    </span>
+                                                                    <h3> منتدي  الاضواء </h3>
+                                                                    <p>نبذة مختصرة عن فائدة هذه الخدمة للمستخدم</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li role="tabpanel" class="tab-pane " id="secondTab">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                                                            <div class="tabs_block flex_center">
+                                                                <a class="more_srvcs" href="#">
+                                                                    <span class="img-circle">
+                                                                        <img src="img/icon.png" alt=""/>
+                                                                    </span>
+                                                                    <h3>تنمية مهنية</h3>
+                                                                    <p>نبذة مختصرة عن فائدة هذه الخدمة للمستخدم</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                                                            <div class="tabs_block flex_center">
+                                                                <a class="more_srvcs" href="#">
+                                                                    <span class="img-circle">
+                                                                        <img src="img/icon.png" alt=""/>
+                                                                    </span>
+                                                                    <h3> نصائح مهنية</h3>
+                                                                    <p>نبذة مختصرة عن فائدة هذه الخدمة للمستخدم</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                                                            <div class="tabs_block flex_center">
+                                                                <a class="more_srvcs" href="#">
+                                                                    <span class="img-circle">
+                                                                        <img src="img/icon.png" alt=""/>
+                                                                    </span>
+                                                                    <h3>تحضير الدروس </h3>
+                                                                    <p>نبذة مختصرة عن فائدة هذه الخدمة للمستخدم</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                                                            <div class="tabs_block flex_center no_border">
+                                                                <a class="more_srvcs" href="#">
+                                                                    <span class="img-circle">
+                                                                        <img src="img/icon.png" alt=""/>
+                                                                    </span>
+                                                                    <h3>بحث مدارس </h3>
+                                                                    <p>نبذة مختصرة عن فائدة هذه الخدمة للمستخدم</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </li>
+                                                <li role="tabpanel" class="tab-pane " id="thirdTab">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                                                            <div class="tabs_block flex_center">
+                                                                <a class="more_srvcs" href="#">
+                                                                    <span class="img-circle">
+                                                                        <img src="img/icon.png" alt=""/>
+                                                                    </span>
+                                                                    <h3> اسأل مدرسًا </h3>
+                                                                    <p>نبذة مختصرة عن فائدة هذه الخدمة للمستخدم</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                                                            <div class="tabs_block flex_center">
+                                                                <a class="more_srvcs" href="#">
+                                                                    <span class="img-circle">
+                                                                        <img src="img/icon.png" alt=""/>
+                                                                    </span>
+                                                                    <h3> إرشادات  ولي الأمر </h3>
+                                                                    <p>نبذة مختصرة عن فائدة هذه الخدمة للمستخدم</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                                                            <div class="tabs_block flex_center">
+                                                                <a class="more_srvcs" href="#">
+                                                                    <span class="img-circle">
+                                                                        <img src="img/icon.png" alt=""/>
+                                                                    </span>
+                                                                    <h3> خليك متابع </h3>
+                                                                    <p>نبذة مختصرة عن فائدة هذه الخدمة للمستخدم</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                                                            <div class="tabs_block flex_center no_border">
+                                                                <a class="more_srvcs" href="#">
+                                                                    <span class="img-circle">
+                                                                        <img src="img/icon.png" alt=""/>
+                                                                    </span>
+                                                                    <h3>بحث مدارس </h3>
+                                                                    <p>نبذة مختصرة عن فائدة هذه الخدمة للمستخدم</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+
+
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                    <div class="top_user_info">
+                        <div class="user_img_name">
+                            <span class="user_img img-circle">
+                                <a href="#">
+                                    <svg viewBox="0 0 24 24" class="user_icon">
+                                        <use xlink:href="#user_icon"/>
+                                    </svg>
+                                    <!--<img src="img/default_user.png" alt=""/>-->
+                                </a>
+                            </span>
+                            <span class="user_info">
+                                <strong class="user_name">اسم المستخدم</strong>
+                                <span> الصف الثالث الثانوي </span>
+                            </span>
+                        </div>
+                        <div class="stat-num">
+                            <div class="num_unit">
+                            <span class="center-block">
+                                <label class="center-block text-center">نقاط المتجر</label>
+                                <a href="#" class="center-block text-center">53</a>
+                            </span>
+                            </div>
+
+                            <div class=" num_unit seprt_brdr">
+                            <span class="center-block">
+                                <label class="center-block text-center"> التقدير العام</label>
+                                <a href="#" class="center-block text-center">19 %</a>
+                            </span>
+                            </div>
+
+                            <div class="num_unit">
+                            <span class="center-block">
+                                <label class="center-block">المستوي</label>
+                                <a class="center-block text-center" href="#">F</a>
+                            </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--/Container -->
+        <div class="cont_sprt dashboard">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-9">
+
+                        <section class="latest_exams">
+                            <h1>اختبارات وتدريبات</h1>
+                            <ul class="list-unstyled subjcts_list">
+                                <li>
+                                    <div class="unit-row trnstn prctc_ribbon">
+                                        <div class="subject-title">
+                                            <span class="img-circle" aria-hidden="true">
+                                                <svg class="Lang_Icon" viewBox="0 0 73.334 73.001">
+                                                    <use xlink:href="#chemistry_lang"/>
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <h4 class="Lang_title"> كيمياء</h4>
+                                                <small>الوحدة الخامسة: الألدهيدات</small>
+                                            </span>
+                                        </div>
+                                        <a class="btn blue_btn" href="#">ابدأ الآن</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="unit-row trnstn prctc_ribbon">
+                                        <div class="subject-title">
+                                            <span class="img-circle" aria-hidden="true">
+                                                <svg class="Lang_Icon" viewBox="0 0 73.334 73.001">
+                                                    <use xlink:href="#Physics_lang"/>
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <h4 class="Lang_title">فيزياء </h4>
+                                                <small>الوحدة الخامسة: الألدهيدات</small>
+                                            </span>
+                                        </div>
+                                        <a class="btn blue_btn" href="#">ابدأ الآن</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="unit-row trnstn exam_ribbon">
+                                        <div class="subject-title">
+                                            <span class="img-circle" aria-hidden="true">
+                                                <svg class="Lang_Icon" viewBox="0 0 73.334 73.001">
+                                                    <use xlink:href="#History_lang"/>
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <h4 class="Lang_title">تاريخ </h4>
+                                                <small>الوحدة الخامسة: الألدهيدات</small>
+                                            </span>
+                                        </div>
+                                        <a class="btn blue_btn" href="#">ابدأ الآن</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="unit-row trnstn exam_ribbon">
+                                        <div class="subject-title">
+                                            <span class="img-circle" aria-hidden="true">
+                                                <svg class="Lang_Icon" viewBox="0 0 73.334 73.001">
+                                                    <use xlink:href="#French_lang"/>
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <h4 class="Lang_title">لغة فرنسية </h4>
+                                                <small>الوحدة الخامسة: الألدهيدات</small>
+                                            </span>
+                                        </div>
+                                        <a class="btn blue_btn" href="#">ابدأ الآن</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a class="more_btn" href="#">المزيد</a>
+                        </section>
+                        
+                        <section class="blog">
+                            <h1>من منتدي الاضواء</h1>
+                            <ul class="list-unstyled blog_list">
+                                <li>
+                                    <article class="blog_unit clearfix">
+                                        <a href="#">
+                                            <div class="cvr_phto">
+                                                <img src="img/100x100.jpg" alt=""/>
+                                            </div>
+                                            <h3> أسوأ جمل يمكن أن تقولها لطفلك </h3>
+                                            <small>معلومة مفيدة</small>
+                                            <span class="views_num"> 5 </span>
+                                        </a>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="blog_unit clearfix">
+                                        <a href="#">
+                                            <div class="cvr_phto">
+                                                <img src="img/100x100.jpg" alt=""/>
+                                            </div>
+                                            <h3> أسوأ جمل يمكن أن تقولها لطفلك </h3>
+                                            <small>معلومة مفيدة</small>
+                                            <span class="views_num"> 5 </span>
+                                        </a>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="blog_unit clearfix">
+                                        <a href="#">
+                                            <div class="cvr_phto">
+                                                <img src="img/100x100.jpg" alt=""/>
+                                            </div>
+                                            <h3> أسوأ جمل يمكن أن تقولها لطفلك </h3>
+                                            <small>معلومة مفيدة</small>
+                                            <span class="views_num"> 5 </span>
+                                        </a>
+                                    </article>
+                                </li>
+                            </ul>
+                            <a class="more_btn" href="#">المزيد</a>
+                        </section>
+
+                        <section class="suggested_lessons">
+                            <h1>دروس مقترحة</h1>
+                            <ul class="list-unstyled subjcts_list">
+                                <li>
+                                    <div class="unit-row trnstn">
+                                        <div class="subject-title">
+                                            <a href="#">
+                                                <span class="img-circle" aria-hidden="true">
+                                                <svg class="Lang_Icon" viewBox="0 0 73.334 73.001">
+                                                    <use xlink:href="#French_lang"/>
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <h4 class="Lang_title">لغة فرنسية </h4>
+                                                <small>-1 الكنز ... قبل أن يضيع</small>
+                                            </span>
+                                            </a>
+                                        </div>
+                                        <div class="related_items">
+                                            <h3>فيديوهات خاصة بالدرس</h3>
+                                            <a class="video_unit" href="#" title="عنوان الفيديو">
+                                                <span class="play_vid trnstn">
+                                                    <svg class="play_icon trnstn" viewBox="0 0 26 29">
+                                                        <use xlink:href="#play_icon" />
+                                                    </svg>
+                                                </span>
+                                                <img src="img/thumb2.jpg" alt=""/>
+                                            </a>
+                                            <a class="video_unit" href="#" title="عنوان الفيديو">
+                                                <span class="play_vid trnstn">
+                                                    <svg class="play_icon trnstn" viewBox="0 0 26 29">
+                                                        <use xlink:href="#play_icon" />
+                                                    </svg>
+                                                </span>
+                                                <img src="img/img_test.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="unit-row trnstn">
+                                        <div class="subject-title">
+                                            <a href="#">
+                                                <span class="img-circle" aria-hidden="true">
+                                                <svg class="Lang_Icon" viewBox="0 0 73.334 73.001">
+                                                    <use xlink:href="#chemistry_lang"/>
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <h4 class="Lang_title">لغة فرنسية </h4>
+                                                <small>-1 الكنز ... قبل أن يضيع</small>
+                                            </span>
+                                            </a>
+                                        </div>
+                                        <div class="related_items">
+                                            <h3>فيديوهات خاصة بالدرس</h3>
+                                            <a class="video_unit" href="#" title="عنوان الفيديو">
+                                                <span class="play_vid trnstn">
+                                                    <svg class="play_icon trnstn" viewBox="0 0 26 29">
+                                                        <use xlink:href="#play_icon" />
+                                                    </svg>
+                                                </span>
+                                                <img src="img/img_test.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="unit-row trnstn">
+                                        <div class="subject-title">
+                                            <a href="#">
+                                                <span class="img-circle" aria-hidden="true">
+                                                <svg class="Lang_Icon" viewBox="0 0 73.334 73.001">
+                                                    <use xlink:href="#French_lang"/>
+                                                </svg>
+                                            </span>
+                                            <span>
+                                                <h4 class="Lang_title">لغة فرنسية </h4>
+                                                <small>-1 الكنز ... قبل أن يضيع</small>
+                                            </span>
+                                            </a>
+                                        </div>
+                                        <div class="related_items">
+                                            <h3>فيديوهات خاصة بالدرس</h3>
+                                            <a class="video_unit" href="#" title="عنوان الفيديو">
+                                                <span class="play_vid trnstn">
+                                                    <svg class="play_icon trnstn" viewBox="0 0 26 29">
+                                                        <use xlink:href="#play_icon" />
+                                                    </svg>
+                                                </span>
+                                                <img src="img/thumb2.jpg" alt=""/>
+                                            </a>
+                                            <a class="video_unit" href="#" title="عنوان الفيديو">
+                                                <span class="play_vid trnstn">
+                                                    <svg class="play_icon trnstn" viewBox="0 0 26 29">
+                                                        <use xlink:href="#play_icon" />
+                                                    </svg>
+                                                </span>
+                                                <img src="img/img_test.png" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a class="more_btn" href="#">المزيد</a>
+                        </section>
+
+                        <section class="comptns">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <h1>أحدث المسابقات</h1>
+                                    <div class="block_unit clearfix ltst_comptns">
+                                        <div class="img-rounded">
+                                            <img src="img/img_test.png" alt=""/>
+                                        </div>
+                                        <h2 class="clearfix">
+                                            <a href="#"> اختبر ذكاءك مع الأضواء</a>
+                                            <small class="l_type">مسابقة ثقافية</small>
+                                        </h2>
+                                        <a class="btn blue_btn trnstn" href="#">اشترك الآن </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <h1>فائزون آخر مسابقة </h1>
+                                    <ul class="list-unstyled winners_list">
+                                        <li>
+                                            <div>
+                                                <div class="name_pos">
+                                                    <small>المركز الأول</small>
+                                                    <h5>محمد احمد عبد العزيز</h5>
+                                                </div>
+                                                <div class="prz_pnts">
+                                                    <small>نقطة</small>
+                                                    <strong>10,000</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="name_pos">
+                                                    <small>المركز الثاني </small>
+                                                    <h5>محمد احمد عبد العزيز</h5>
+                                                </div>
+                                                <div class="prz_pnts">
+                                                    <small>نقطة</small>
+                                                    <strong>8,000</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="name_pos">
+                                                    <small>المركز الثالث </small>
+                                                    <h5>محمد احمد عبد العزيز</h5>
+                                                </div>
+                                                <div class="prz_pnts">
+                                                    <small>نقطة</small>
+                                                    <strong>4,000</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a class="more_btn" href="#">جميع المسابقات</a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="ltst_qstn">
+                            <h1>آخر الاسئلة المجابة</h1>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="qstn_unit">
+                                        <div class="right_info text-center">
+                                            <div>
+                                                <span class="user_img img-circle">
+                                                    <a href="#">
+                                                        <svg viewBox="0 0 24 24" class="user_icon">
+                                                            <use xlink:href="#user_icon"/>
+                                                        </svg>
+                                                        <!--<img src="img/default_user.png" alt=""/>-->
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <span class="user_name small">اسم المستخدم</span>
+                                        </div>
+                                        <div class="left_info">
+                                            <div class="qstn_body">
+                                                <h4><a href="#"> ما هو الفرق بين المفعول المطلق و المفعول لأجله ؟ </a></h4>
+                                            </div>
+                                            <div class="action_btn_cont">
+                                                <span class="likes">
+                                                    <span>
+                                                        <span class="small">اعجبهم السؤال</span>
+                                                        <svg class="small_like" viewBox="0 0 30 30">
+                                                            <use xlink:href="#like_icon" />
+                                                        </svg>
+                                                        <strong>255</strong>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="qstn_unit">
+                                        <div class="right_info text-center">
+                                            <div>
+                                                <span class="user_img img-circle">
+                                                    <a href="#">
+                                                        <svg viewBox="0 0 24 24" class="user_icon">
+                                                            <use xlink:href="#user_icon"/>
+                                                        </svg>
+                                                        <!--<img src="img/default_user.png" alt=""/>-->
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <span class="user_name small">اسم المستخدم</span>
+                                        </div>
+                                        <div class="left_info">
+                                            <div class="qstn_body">
+                                                <h4><a href="#"> ما هو الفرق بين المفعول المطلق و المفعول لأجله ؟ </a></h4>
+                                            </div>
+                                            <div class="action_btn_cont">
+                                                <span class="likes">
+                                                    <span>
+                                                        <span class="small">اعجبهم السؤال</span>
+                                                        <svg class="small_like" viewBox="0 0 30 30">
+                                                            <use xlink:href="#like_icon" />
+                                                        </svg>
+                                                        <strong>255</strong>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="qstn_unit">
+                                        <div class="right_info text-center">
+                                            <div>
+                                                <span class="user_img img-circle">
+                                                    <a href="#">
+                                                        <svg viewBox="0 0 24 24" class="user_icon">
+                                                            <use xlink:href="#user_icon"/>
+                                                        </svg>
+                                                        <!--<img src="img/default_user.png" alt=""/>-->
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <span class="user_name small">اسم المستخدم</span>
+                                        </div>
+                                        <div class="left_info">
+                                            <div class="qstn_body">
+                                                <h4><a href="#"> ما هو الفرق بين المفعول المطلق و المفعول لأجله ؟ </a></h4>
+                                            </div>
+                                            <div class="action_btn_cont">
+                                                <span class="likes">
+                                                    <span>
+                                                        <span class="small">اعجبهم السؤال</span>
+                                                        <svg class="small_like" viewBox="0 0 30 30">
+                                                            <use xlink:href="#like_icon" />
+                                                        </svg>
+                                                        <strong>255</strong>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a class="more_btn" href="#">المزيد</a>
+                        </section>
+                    
+                        <section class="slctd_vids">
+                            <h1>فيديوهات مختارة</h1>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="block_unit clearfix">
+                                        <div class="cvr_phto img-rounded">
+                                            <div class="tumb cover">
+                                                <img class="cover" src="img/thumb2.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="panel-title trnstn">
+                                            <h2>
+                                            <span class="play_vid trnstn">
+                                                <svg class="play_icon trnstn" viewBox="0 0 26 29">
+                                                    <use xlink:href="#play_icon" />
+                                                </svg>
+                                            </span>
+                                                <a href="#"> عنواالفيديو هنا </a>
+                                            </h2>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="block_unit clearfix">
+                                        <div class="cvr_phto img-rounded">
+                                            <div class="tumb cover">
+                                                <img class="cover" src="img/thumb2.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="panel-title trnstn">
+                                            <h2>
+                                            <span class="play_vid trnstn">
+                                                <svg class="play_icon trnstn" viewBox="0 0 26 29">
+                                                    <use xlink:href="#play_icon" />
+                                                </svg>
+                                            </span>
+                                                <a href="#"> عنوان الفيديو هنا عنوان الفيديو هنا </a>
+                                            </h2>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div class="block_unit clearfix">
+                                        <div class="cvr_phto img-rounded">
+                                            <div class="tumb cover">
+                                                <img class="cover" src="img/thumb2.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="panel-title trnstn">
+                                            <h2>
+                                            <span class="play_vid trnstn">
+                                                <svg class="play_icon trnstn" viewBox="0 0 26 29">
+                                                    <use xlink:href="#play_icon" />
+                                                </svg>
+                                            </span>
+                                                <a href="#"> عنوان  هنا عنوان  هنا عنوان الفيديو هنا </a>
+                                            </h2>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="more_btn" href="#">المزيد</a>
+                        </section>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <aside>
+                            <div class="mr"></div>
+                            <div class="Social_Sharing trnstn">
+                                <div class="share_btn_cont">
+                                    <a class="text-center facebook" data-toggle="tooltip" title="شارك علي فيسبوك" href="javascript:ShareFacebook();">
+                                        <span class="trnstn">
+                                            <svg class="facbook_icon trnstn" viewBox="0 0 30 30">
+                                                <use xlink:href="#facbook_icon" />
+                                            </svg>
+                                        </span>
+                                        <span class="action_text small trnstn facebookcount">0</span>
+                                    </a>
+
+                                    <a class="text-center twitter" data-toggle="tooltip" title="شارك علي تويتر" href="javascript:ShareTwitter();" target="_blank">
+                                        <span class=" trnstn">
+                                            <svg class="twitter_icon trnstn" viewBox="0 0 30 30">
+                                                <use xlink:href="#twitter_icon" />
+                                            </svg>
+                                        </span>
+                                        <span class="action_text small trnstn twittercount">0</span>
+                                    </a>
+                                    <a class="text-center google" data-toggle="tooltip" title="شارك علي جوجل بلاس" href="javascript:ShareGPlus();" target="_blank">
+                                        <span class="trnstn">
+                                            <svg class="google_icon trnstn" viewBox="0 0 30 30">
+                                                <use xlink:href="#google_icon" />
+                                            </svg>
+                                        </span>
+                                        <span class="action_text small trnstn gpluscount">0</span>
+                                    </a>
+                                    <a class="text-center bookmark" data-toggle="tooltip" href="javascript:CheckPageBookmark();" title="اضافة أو حذف لمفضلاتي">
+                                        <span class="bookmark_icon action_icon trnstn">
+                                            <svg class="trnstn" viewBox="0 0 30 30">
+                                                <use xlink:href="#bookmark_icon" />
+                                            </svg>
+                                        </span>
+                                        <span class="action_text small trnstn">مفضلاتي</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel aside_panel badges_widget">
+                                <div class="panel-heading">
+                                    <div class="non-semantic-protector">
+                                        <h1 class="ribbon">
+                                            <span class="ribbon-content">أوسمة الأضواء</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <p class="highlighted">لقد حصلت علي اوسمة الأضواء التالية: </p>
+                                    <ul class="bdgs_list">
+                                        <li>
+                                            <a class="trnstn" href="#">
+                                                <img src="img/badges/cup_gold.png" alt=""/>
+                                                <span>كأس المشاركة الذهبي</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="trnstn" href="#">
+                                                <img src="img/badges/key_silver.png" alt=""/>
+                                                <span>المفتاح الفضي</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="trnstn" href="#">
+                                                <img src="img/badges/envelope_pronz.png" alt=""/>
+                                                <span>المفتاح الفضي</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="inline_btn_cont">
+                                        <a class="btn blue_btn inline_btn" href="#">أوسمتي</a>
+                                        <a class="btn blue_btn inline_btn" href="#">أبطال الأضواء</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel aside_panel badges_widget">
+                                <div class="panel-heading">
+                                    <div class="non-semantic-protector">
+                                        <h1 class="ribbon">
+                                            <span class="ribbon-content">أوسمة الأضواء</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="top_img">
+                                        <img src="img/badge_unkown.png" alt=""/>
+                                    </div>
+                                    <p> ليس لديك اوسمة بعد ... يمكنك اكتساب اوسمة من خلال النشاطات التالية: </p>
+                                    <ul class="list-group">
+                                        <li><span>المشاركة علي فيسبوك</span></li>
+                                        <li><span>دعوة الأصدقاء للتسجيل</span></li>
+                                        <li><span>الزيارة اليومية لموقع الأضواء</span></li>
+                                        <li><span>رفع مواهبك علي موقع الأضواء</span></li>
+                                    </ul>
+                                    <a class="btn blue_btn" href="#">المزيد عن أوسمة الأضواء</a>
+                                </div>
+                            </div>
+                            <div class="panel aside_panel rplc_pnts">
+                                <div class="panel-heading">
+                                    <h1 class="panel-title">استبدل نقاطك </h1>
+                                </div>
+                                <div class="panel-body">
+                                    <p>لديك <strong>1020</strong> نقطة لمتجر الاضواء يمكنك الذهاب للمتجر الان واستبدالهم باحدي المنتجات التالية</p>
+                                    <ul class="list-unstyled str_prdcts">
+                                        <li>
+                                            <a href="#">
+                                               <span class="prz_name">
+                                                   <span class="img-circle" aria-hidden="true">
+                                                   <img src="img/icon.png" alt=""/>
+                                                </span>
+                                                <strong> اختبار </strong>
+                                               </span>
+
+                                                <div class="prz_pnts">
+                                                    <strong>500</strong>
+                                                    <small>نقطة</small>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                               <span class="prz_name">
+                                                   <span class="img-circle" aria-hidden="true">
+                                                   <img src="img/icon.png" alt=""/>
+                                                </span>
+                                                <strong> اختبار </strong>
+                                               </span>
+
+                                                <div class="prz_pnts">
+                                                    <strong>500</strong>
+                                                    <small>نقطة</small>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                               <span class="prz_name">
+                                                   <span class="img-circle" aria-hidden="true">
+                                                   <img src="img/icon.png" alt=""/>
+                                                </span>
+                                                <strong> تدريب </strong>
+                                               </span>
+
+                                                <div class="prz_pnts">
+                                                    <strong>500</strong>
+                                                    <small>نقطة</small>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a class="btn blue_btn sml_btn" href="#">المزيد علي متجر الاضواء</a>
+                                </div>
+                            </div>
+                            <div class="panel aside_panel cntrptns">
+                                <div class="panel-heading">
+                                    <h1 class="panel-title"> مشاركات </h1>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="block_unit clearfix">
+                                        <h5>مشاركات مميزة</h5>
+                                        <small>احمد عاصم</small>
+                                        <div class="cvr_phto img-rounded">
+                                            <div class="tumb cover">
+                                                <img class="cover" src="img/thumb2.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="panel-title trnstn">
+                                            <h2>
+                                            <span class="play_vid trnstn">
+                                                <svg class="play_icon trnstn" viewBox="0 0 26 29">
+                                                    <use xlink:href="#play_icon" />
+                                                </svg>
+                                            </span>
+                                                <a href="#"> عنوان  هنا عنوان  هنا عنوان الفيديو هنا </a>
+                                            </h2>
+
+                                        </div>
+                                    </div>
+                                    <div class="block_unit clearfix">
+                                        <h5>احدث مشاركات </h5>
+                                        <small> وائل المهدي </small>
+                                        <div class="cvr_phto img-rounded">
+                                            <div class="tumb cover">
+                                                <img class="cover" src="img/thumb2.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="panel-title trnstn">
+                                            <h2>
+                                            <span class="play_vid trnstn">
+                                                <svg class="play_icon trnstn" viewBox="0 0 26 29">
+                                                    <use xlink:href="#play_icon" />
+                                                </svg>
+                                            </span>
+                                                <a href="#"> عنوان  هنا عنوان  هنا عنوان الفيديو هنا </a>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel aside_panel games">
+                                <div class="panel-heading">
+                                    <h1 class="panel-title"> ألعابي </h1>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="block_unit clearfix">
+                                        <div class="cvr_phto img-rounded">
+                                            <div class="tumb cover">
+                                                <a href="#">
+                                                    <img class="cover" src="img/game1.jpg" alt=""/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <h5 class="sub_title"><a href="#">الخروج من الغرفة 1 </a></h5>
+
+                                    </div>
+                                    <hr/>
+                                    <div class="block_unit clearfix">
+                                        <div class="cvr_phto img-rounded">
+                                            <div class="tumb cover">
+                                                <a href="#">
+                                                    <img class="cover" src="img/game2.jpg" alt=""/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <h5 class="sub_title"><a href="#">الخروج من الغرفة 1 </a></h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/Container -->
+
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="footer_brand">
+                            <a class="footer_logo" href="#">
+                                <svg class="footer_logo_icon" viewBox="0 0 195 95">
+                                    <use xlink:href="#aladwaa_logo" />
+                                </svg>
+                                <span> # سهــــــلنـالك_الصـــــعب </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-5">
+                        <div class="footer_links">
+                            <a href="#">الرئيسية</a>
+                            <a href="#">ماذا نقدم؟</a>
+                            <a href="#">من نحن</a>
+                            <a href="#">   انضم لفريقنا</a>
+                            <a href="#"> اقتراحات وشكاوى</a>
+                            <a href="#"> اتصل بنا</a>
+                            <a href="#"> مساعدة</a>
+                            <a href="#"> خريطة الموقع</a>
+                            <a href="#"> سياسة الخصوصية</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-3">
+                        <div class="copyright">
+                            <a href="#">
+                                <span>دار نهضة مصر للنشر ش.م.م</span>
+                                <span>جميع الحقوق محفوظة © 2014 </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!--Ajaxing for SVG Sprite-->
+    <script type="text/javascript">
+        var ajax = new XMLHttpRequest();
+        ajax.open("GET", "img/sprite.svg", true);
+        ajax.send();
+        ajax.onload = function(e) {
+            var div = document.createElement("div");
+            div.innerHTML = ajax.responseText;
+            document.body.insertBefore(div, document.body.childNodes[0]);
+        }
+    </script>
+
+    <script type="text/javascript">
+        var ajax2 = new XMLHttpRequest();
+        ajax2.open("GET", "img/supjects.svg", true);
+        ajax2.send();
+        ajax2.onload = function(e) {
+            var div = document.createElement("div");
+            div.innerHTML = ajax2.responseText;
+            document.body.insertBefore(div, document.body.childNodes[0]);
+        }
+    </script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!--<script>-->
+        <!--(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=-->
+        <!--function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;-->
+        <!--e=o.createElement(i);r=o.getElementsByTagName(i)[0];-->
+        <!--e.src='//www.google-analytics.com/analytics.js';-->
+        <!--r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));-->
+        <!--ga('create','UA-XXXXX-X');ga('send','pageview');-->
+    <!--</script>-->
+    </body>
+</html>

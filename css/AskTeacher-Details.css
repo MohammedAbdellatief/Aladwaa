@@ -1,0 +1,402 @@
+/*Aladwaa.com style*/
+
+
+/* ==========================================================================
+   Ask Teacher Details
+   ========================================================================== */
+.Ask-Teacher{
+ padding: 20px 0px 0px;
+}
+.user-name{
+display:block;
+}
+
+.user_img{
+width: 40px;
+height: 40px;
+line-height: 40px;
+}
+
+.AladwaaTeam_icon{
+width: 50px;
+}
+
+.AladwaaTeam{
+margin-left: 20px;
+
+}
+
+.ask-bar{
+	color: #2c4159;
+	background-color: #e4ebf2;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	min-height: 160px;
+	}
+
+.ask{
+	padding-right:0px;
+	}
+	
+.ask textarea {
+	display: block;
+	width: 100%;
+	padding: 20px 20px 11px;
+	font-size: 26px;
+	line-height: 1.42857;
+	background-color: #FFF;
+	background-image: none;
+	border: 1px solid #CCC;
+	border-radius: 30px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+	}
+.Question-icon{
+	text-shadow:  1px 1px 2px #4b4b4b;
+
+}
+
+
+label{
+	font-weight:normal;
+	color:#42546a;
+	margin-right: 1%;
+	width: 100%;
+	}
+	
+.Choose{
+	padding-right: 50px;
+	}
+	
+.ask-numbers {
+	text-align:center;
+	margin-top:12px;
+	}
+.ask-numbers a{
+	color:#42546a !important;
+	}
+.ask-numbers a:hover{
+	color:#42546a;
+	text-decoration:underline !important;
+	}
+	
+.ask button{	
+	border-radius: 30px;
+	color: #FFF;
+	background-color: #43A8BF;
+	margin-top: -63px;
+	float: left;
+	padding: 8px 20px;
+	text-align: center;
+	font-size: 27px;
+}
+
+.ask button:hover {
+	background-color:#192b40;
+	color:#FFF;
+	}
+
+.Choose .dropdown-toggle{
+    color: #5c5d5e;
+	text-align:right;
+	box-shadow: none;	
+	min-width: 150px;
+	background-color: #f2f2f2;
+	border: 1px;
+	border-radius: 4px;
+	border-color: #c2c8ce;
+	border-style: solid;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 0px rgba(0, 0, 0, 0.1) inset;
+	}
+
+
+.ask-details{
+	margin-top: 20px;
+	background-color: #e4ebf2;
+	height: 106px;
+	padding-bottom: 20px;
+	border: 1px solid #e4ebf2;
+	border-radius: 13px;
+	padding-top: 20px;
+	color:#192b40;
+	}
+.ask-details a{
+	color:#192b40;
+	}	
+
+.question-details{
+	margin-top: 20px;
+	color:#192b40;
+	}
+.question-details a {
+	color:#2b2b2b;
+	}
+.question-details a:hover {
+	color:#ea4923;
+	text-decoration:none;
+	}
+	
+.question-userImg{
+	/*margin-top: 14px;*/
+	text-align:center;
+	}
+.question-year {
+	margin-left: 15px;
+	margin-right: 15px;
+	}
+.year_details{
+	color: #3D5A7E;
+	font-size: 12px;
+	}
+	
+.list-unstyled{
+	padding-right:0px;
+	}
+	
+
+
+.Aladwaa-answer{
+display:table-cell;
+margin-top: 11px;
+}
+
+.line{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #c3ced9;
+	width: 100%;
+	}
+
+	
+
+/* ==========================================================================
+   	AskTeacher-Details
+   ========================================================================== */
+.AskTeacher-Details{
+margin-bottom: 20px;
+	}
+	
+.AskTeacher-Details .year_details {
+	margin-top: 25px;
+	}
+.small_like {
+margin-top: 3px;
+}
+.right_info {
+width: 100px;
+position: relative;
+margin-left: 20px;
+}
+
+.left_info {
+    width: calc(100% - 120px);
+    position: relative;
+}
+
+.AskTeacher-Details .question-userImg{
+margin-right: 30px;
+
+	}
+
+.AskTeacher-Details .numbers {
+	font-weight: bolder;
+	font-size: 18px;
+	color: #42546a;
+	margin-right: 5px;
+	}
+
+.anwser-title{
+	margin-bottom: 12px;
+	margin-top: 28px;
+	}
+.anwser-title a{
+	color:#597696;
+	}
+	
+.like-answer-Section{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	border-top: 1px dotted #cecece;
+    border-bottom: 1px dotted #cecece;
+	color: #192b40;
+	min-height: 100px;
+	}	
+
+.like-answer-Section li {
+margin-left:5%;
+
+}
+.Previous{
+margin-bottom:10px;
+}
+
+.aladwa-answer{
+	color: #192b40;
+	}
+	
+	
+.like-answer-Section a {
+	color: #192b40;
+	}
+	
+	
+.googleplus{
+	background-color: #de5644;
+	border-radius: 100%;
+	color: #FFF;
+	padding: 6px 10px;
+	text-align: center;
+	font-size: 20px;
+	border: 1px solid #c9cbcd;
+	height:46px;
+	width:46px;
+	}
+.txt-google {
+	color: #de5644 !important;
+	}	
+	
+.FB{
+	background-color: #3460a1;
+	border-radius: 100%;
+	color: #FFF;
+	padding: 6px 15px;
+	text-align: center;
+	font-size: 20px;
+	border: 1px solid #c9cbcd;
+	height:46px;
+	width:46px;
+	}
+.txt-FB{
+	color: #3460a1 !important;
+	}	
+
+.twitter{
+	background-color: #65abd0;
+	border-radius: 100%;
+	color: #FFF ;
+	padding: 6px 10px ;
+	text-align: center;
+	float:none;
+	font-size: 20px;
+	border: 1px solid #c9cbcd;
+	margin:0px;
+	height:46px;
+	width:46px;
+	}
+	
+.txt-twitter{
+	color:#65abd0 !important;
+	}
+		
+
+.V-line{
+	width: 1px;
+	height: 45px;
+	background-color: #CCC;
+	vertical-align: middle;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+
+
+/* ==========================================================================
+   lesson pagination
+   ========================================================================== */
+.lesson-pagination .pager>li:first-child>a, .pager>li:first-child>span {
+	background-color: #e4ebf2;
+	color: #192b40;
+	border: medium none;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	margin-right: 5px;
+	padding: 25px;
+	}
+	
+.lesson-pagination .pager>li:last-child>a, .pager>li:last-child>span {
+	background-color: #e4ebf2;
+	color: #192b40;
+	border: medium none;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius:30px;
+	border-top-left-radius: 30px;
+	margin-right: 5px;
+	padding: 25px;
+	}
+.Pagination-arrow-R{
+	font-size: 48px;
+	vertical-align: middle;
+	float: right;
+	/* font-weight: 700; */
+	margin-top: 0px;
+	color: #425164;
+	}
+.Pagination-arrow-L{
+	font-size: 48px;
+	vertical-align: middle;
+	float: left;
+	/* font-weight: 700; */
+	margin-top: 0px;
+	color: #425164;
+	}
+	
+.pager {
+	padding-left: 0;
+	margin: auto;
+	text-align: center;
+	list-style: none;
+	margin-bottom: 20px;
+	/* padding: 0px; */
+}
+	
+	/* ==========================================================================
+	   FB-comments
+	   ========================================================================== */
+.FB-comments{
+	color:#192b40;
+	border-bottom:1px solid #e1e3e6;
+    padding-bottom: 5px;
+	font-size:16px;
+	padding-right: 4px;
+	margin-top:10px;
+	}
+.Ads{
+	margin-top: 20px;
+	}
+	
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .navbar-header{float: right;}
+    .navbar-nav{float: right;}
+    .navbar-brand{float: right;}
+    .navbar-nav>li{float: right;}
+    .navbar-nav>li>a{ padding-top:0; padding-bottom:0; line-height: 80px; height: 80px;}
+    .nav>li,.dropdown{ position: static;}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1200px) {
+}
+

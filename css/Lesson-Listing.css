@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    padding-top: 80px;
+}
+.lessons-list{
+    padding: 0;
+}
+.lessons-list li {
+    display: inline-block;
+    border-bottom: 1px solid rgb(218, 219, 219);
+    width: 100%;
+}
+.unit-row {
+    padding: 10px 5px;
+    margin: 5px 0;
+}
+.unit-row:hover {
+    background-color: rgba(218,230,242,.3);
+}
+
+.Lang_Icon {
+    width: 70px;
+}
+.subject-title {
+    text-align: center;
+}
+.subject-title a {
+    display:block;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.subject-num {
+    text-align: center;
+    margin-top: 20px;
+}
+.num_unit {
+    display: inline-block;
+    padding: 0 7%;
+    font-size: 13px;
+}
+.num_unit a{
+    font-size: 17px;
+    font-family: "GE Flow Bold", arial;
+}
+label {
+    color: #6c8fb7;
+    font-weight: normal;
+}
+.Videos {
+    border-left: 1px solid rgb(218, 219, 219);
+    border-right: 1px solid rgb(218, 219, 219);
+}
+.filter{
+    background-color: #e4ebf2;
+    border-radius: 5px;
+    padding: 10px;
+}
+.f-sec{
+    display:block;
+    margin:5px;
+}
+
+
+
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .subject-title, .subject-num {
+        text-align: inherit;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .subject-title{
+        width: calc(100% - 210px);
+    }
+    .subject-title h4{
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .subject-num{
+        width: 200px;
+        text-align: center;
+        margin: 0;
+    }
+    .f-sec{
+        display:inline-block;
+        margin:5px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1200px) {
+}

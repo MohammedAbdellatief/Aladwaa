@@ -1,0 +1,427 @@
+/*Home page style*/
+
+
+/* ==========================================================================
+   sections
+   ========================================================================== */
+.m_sec{
+    padding: 40px 3%;
+
+}
+.m_sec .vlp{
+    font-size: 23px;
+    padding: 15px 0;
+}
+/*intro section*/
+
+.intro_sec{
+    background-color: #192b40;
+    color: #fff;
+    text-align: center;
+    padding: 80px 3% 0;
+    height: 100%;
+}
+.intro_sec .flip-container{
+    width: 70%;
+    min-width: 300px;
+    margin: auto;
+}
+.intro_sec .vlp , .tests_sec .vlp{
+    padding: 3%;
+}
+.intro_sec .jumbotron, .intro_sec aside{
+    background-color: transparent;
+    padding: 0;
+}
+.intro_sec h1{
+    display: none;
+}
+.L_logo_icon{
+    width: 170px;
+}
+.intro_sec .top-left{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70%;
+}
+.social_btn{
+    min-width: 60px;
+    margin: 7px;
+}
+
+.prm_srv .login{
+    padding-right: 29px;
+    margin-right: 15px;
+    box-shadow: 01px 0 0 rgba(255,255,255,.2);
+    font-size: 13px;
+    display: inline-block;
+}
+.prm_srv .login a{
+    color: #fff;
+    display: inline-block;
+    padding: 0 3px;
+}
+.student svg{
+    max-width: 400px;
+}
+.srvc_lnks{
+    padding: 0;
+    display: table;
+    width: 85%;
+    margin: 0 auto 8%;
+}
+.srvc_lnks li{
+    list-style-type: none;
+    display:table-cell;
+}
+.srvc_lnks li a,.srvc_lnks li a:focus{
+    color: #fff;
+}
+.srvc_lnks li a:hover{
+    color: #ffbe4c;
+    text-decoration: none;
+}
+.srv_icon{
+    display: block;
+    padding-bottom: 10px;
+}
+.usr_signup{
+   width: 250px;
+}
+.chng_usr{
+    display: table;
+    width: 53%;
+    margin: 15px auto;
+}
+.chng_usr span{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: rgba(255,255,255,.7);
+}
+.chng_usr a{
+    display: inline-block;
+    width: 45%;
+}
+.srvc_lnks svg{
+    width: 37px;
+}
+.srvc_lnks .competition_icon{
+    width: 27px;
+}
+.more_btn{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: auto;
+    width: 40px;
+}
+.more_btn span{
+    overflow: hidden;
+    text-indent: -999px;
+    display: block;
+}
+.btm_lnk{
+    display: block;
+    -webkit-transition-delay: .4s; /* Safari */
+    transition-delay: .4s;
+    opacity: 0;
+}
+.btm_lnk a{
+    color: #fff;
+    /*text-decoration: none;*/
+}
+.flip-container:hover .btm_lnk{
+    opacity: .8;
+}
+.arrows{
+    width: 50px;
+    height: 40px;
+}
+.arrows path{
+    fill: transparent;
+    stroke: #fff;
+    stroke-linecap: round;
+}
+.arrows path.one{
+    -moz-animation: glow 3s infinite ;
+    -webkit-animation: glow 3s infinite ;
+    opacity: .4;
+}
+.arrows path.two{
+    -moz-animation: glow 3s infinite .2s;
+    -webkit-animation: glow 3s infinite .2s;
+    stroke-width: 1px;
+    opacity: .4;
+}
+.prm_srv .ntfc{
+    padding: 10px 5px;
+    float: none;
+}
+.prm_srv .ntfc.open{
+    background-color: #f0f0f0;
+    border-radius: 4px 4px 0 0;
+}
+.prm_srv .ntfc > a{
+    padding: 5px 11px;
+}
+.prm_srv .dropdown-menu{
+    background-color: #f0f0f0;
+    border-radius: 0 0 7px 7px;
+    overflow: hidden;
+    right: 0;
+    width: 300px;
+}
+.ntfc_icon{
+    fill:#fff;
+}
+.ntfc.open .ntfc_icon{
+    fill: #556579;
+}
+.ntfc.open .ntfc_num{
+    box-shadow: 0 0 0 2px #f0f0f0 ;
+}
+/*artwork animation start*/
+#stud_whole,.circle,.stars{
+    display: none
+}
+/*video section*/
+.video_cont{
+    padding: 80px 0;
+}
+.vid_hero{
+    margin-top: 30px;
+}
+
+/*tests section*/
+.tests_sec {
+    background-image: url("../img/bg1.png");
+    background-color: #40ad5a;
+    color: #fff;
+    padding-top:150px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+.tests_sec .vlp {
+    color: #064515;
+}
+/*Ask section*/
+.ask_sec {
+    color: #192b40;
+    text-align: center;
+    background: url(../img/pattern.png) repeat 0 0 scroll #e4ebf2;
+}
+/*points section*/
+.points_sec {
+    background-color: #ffbe4c;
+    color: #fff;
+    text-align: center;
+    padding: 0 0 40px 0;
+}
+.points_sec h1{
+    color: #ffbe4c;
+}
+.points_sec .vlp {
+    color: #d5401c;
+}
+.whiteRow{
+    background-color: #fff;
+    padding: 20px 20%;
+    margin-bottom: 30px;
+}
+.pnts_srvc{
+    border: solid 5px #fff;
+    box-shadow: 0 3px 0 rgba(0,0,0,.07) inset;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #e4ebf2;
+    margin: 30px auto;
+    opacity: .4;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+}
+.pnts_srvc:hover{
+    opacity: .7;
+    width: 160px;
+    height: 160px;
+    margin-top: 25px;
+
+}
+.pnts_srvc:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -35px;
+    width: 130px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.05);
+}
+.owl-item.center .pnts_srvc{
+    opacity: 1;
+    width: 190px;
+    height: 190px;
+    margin-top: 7px;
+}
+.owl-item.center h6{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+.owl-item .item{
+    min-height: 250px;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.owl-theme .owl-controls{
+    margin: 0;
+}
+.pnts_srvc h6{
+    border-radius: 50%;
+    padding: 7% 20%;
+    font-size: 80%;
+    color: #43a8bf;
+    margin-bottom: 5px;
+}
+.pnts_icon{
+    display: block;
+    width: 80px;
+    height: 90px;
+    margin: auto;
+    background:url("../img/points_services.png") no-repeat scroll center 0 / 70% auto rgba(0, 0, 0, 0);
+}
+.pnts_login{
+    background-position: center 0;
+}
+.pnts_info{
+    background-position: center -160px;
+}
+.pnts_tests{
+    background-position: center -325px;
+}
+.pnts_upload{
+    background-position: center -485px;
+}
+.pnts_social{
+    background-position: center -650px;
+}
+/*Videos Section*/
+.videos_sec {
+    color: #8a4a3a;
+    background: url(../img/pattern_dark.png) repeat 0 0 scroll #f3d9ac;
+}
+.videos_sec h1{
+    display: inline-block;
+}
+.videos_sec .vlp{
+    display: inline-block;
+    margin-right: 15px;
+}
+.videos_sec .block_unit .panel-title h2{
+    padding-left: 60px;
+}
+/*competitions sections*/
+.competitions_sec {
+    background-color: #ec4b24;
+    background-image: url("../img/bg2.png");
+    color: #fff;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.competitions_sec .vlp{
+    padding: 30px 0;
+}
+.comp_units{
+    margin-bottom: 20px;
+}
+.l_type{
+    display:table-cell;
+    color:#ec4b24;
+    vertical-align: middle;
+    padding: 15px;
+
+}
+/*signup section*/
+.signup{
+    color: #204d74;
+    text-align: center;
+    padding: 25px 3%;
+}
+.signup .facebook_btn, .signup .google_btn{
+    padding:10px 3%;
+}
+.signup .btm_lnk{
+    opacity: 1;
+    margin-top: 15px;
+}
+.signup .btm_lnk a{
+    color: #204d74;
+}
+.signup .vlp{
+    padding: 7px 0;
+}
+.signup h1{
+    font-size: 36px;
+}
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .top-nav-collapse{ top: -80px; visibility: hidden;opacity: 0; z-index: -1;}
+    .intro_sec{ padding-top: 0;}
+    .intro_sec .jumbotron, .intro_sec aside{ padding: 25% 0;}
+    .artwork_cont{ padding: 0 7%;}
+    .usr_signup{
+        width: 290px;
+    }
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .intro_sec .jumbotron, .intro_sec aside{ padding: 18% 0;}
+    .artwork_cont{
+        padding: 0 18%;
+        text-align: center;
+    }
+    .artwork_cont.exams_artwrk{
+        padding: 0 7%;
+    }
+    .tests_sec{text-align: right}
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1200px) {
+}
+
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+/*More Arrow animation*/
+@-moz-keyframes glow{
+    0%{stroke-width:2;opacity: .4}
+    13%{stroke-width:5;opacity:1}
+    25%{stroke-width:2;opacity: .4}
+    100%{stroke-width:2;opacity: .4}
+}
+@-webkit-keyframes glow{
+    0%{stroke-width:2;opacity: .4}
+    13%{stroke-width:5;opacity:1}
+    25%{stroke-width:2;opacity: .4}
+    100%{stroke-width:2;opacity: .4}
+}
+

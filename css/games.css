@@ -1,0 +1,21 @@
+.games_list{
+    padding: 0;
+}
+.games_list li{
+    list-style-type: none;
+}
+.games_list .block_unit, .games_list .panel-body{
+    margin:2px;
+    padding: 7px 0;
+}
+.games_list .btn{
+    margin: 7px 0;
+    padding: 10px 15px;
+}
+.games_list .cvr_phto{
+    margin-bottom: 10px;
+}
+
+.games_list .dimmed_item{
+    background-color: #e6e6e6;
+}
