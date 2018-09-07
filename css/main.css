@@ -3,18 +3,18 @@
 /* ==========================================================================
    general style
    ========================================================================== */
-/*@font-face {*/
-    /*font-family: 'GE Flow';*/
-    /*src: url('../fonts/GE Flow Regular.otf');*/
-/*}*/
-/*@font-face {*/
-    /*font-family: 'GE Flow Bold';*/
-    /*src: url('../fonts/GE Flow Bold.otf');*/
-/*}*/
+@font-face {
+    font-family: 'GE Flow';
+    src: url('../fonts/GE Flow Regular.otf');
+}
+@font-face {
+    font-family: 'GE Flow Bold';
+    src: url('../fonts/GE Flow Bold.otf');
+}
 
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 
-*{ font-family:"Droid Arabic Kufi", Tahoma !important;}
+/**{ font-family:"Droid Arabic Kufi", Tahoma !important;}*/
 
 
 body, html {
